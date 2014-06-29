@@ -4,12 +4,20 @@
 <html>
 <head>
     <title>我的空间</title>
+    <!-- Bootstrap core CSS -->
+    <link href="/webapp/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/webapp/css/signin.css" rel="stylesheet">
 </head>
 <body>
 
-<h1><a href="<c:url value="/"/>">首页</a> - 空间</h1>
 
-<p>用户名：<shiro:principal/></p>
+<div class="container">
+<h1><a href="<c:url value="/"/>">首页</a> - 空间</h1>
+	<div class="row">
+		<div class="wall" style="position: relative;">
+			<p>用户名：<shiro:principal/></p>
 
 <dl>
     <dt>角色：</dt>
@@ -38,6 +46,8 @@
 </dl>
 
 <a href="<c:url value="/logout"/>">退出</a>
-
+		</div>		
+	</div>
+</div>
 </body>
 </html>

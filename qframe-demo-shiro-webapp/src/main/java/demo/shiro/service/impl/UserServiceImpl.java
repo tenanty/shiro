@@ -1,10 +1,7 @@
 package demo.shiro.service.impl;
 
-import demo.shiro.exception.LoginException;
-import demo.shiro.exception.RegisterException;
-import demo.shiro.service.UserService;
-import demo.shiro.tool.Database;
 import java.util.Map;
+
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.UsernamePasswordToken;
@@ -13,6 +10,11 @@ import org.apache.shiro.authc.credential.PasswordService;
 import org.apache.shiro.subject.Subject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import demo.shiro.exception.LoginException;
+import demo.shiro.exception.RegisterException;
+import demo.shiro.service.UserService;
+import demo.shiro.tool.Database;
 
 public class UserServiceImpl implements UserService {
 
